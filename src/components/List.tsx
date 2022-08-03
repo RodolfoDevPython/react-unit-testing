@@ -15,8 +15,10 @@ export function List({ initialItems }: ListProps) {
     }
 
     function removeToList(item: string) {
+        
         setStateContext([ ...stateContext, item ])
         setList( state => state.filter( e => e != item ));
+
     }
 
     return (
