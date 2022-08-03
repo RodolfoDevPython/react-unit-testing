@@ -34,7 +34,7 @@ export function List({ initialItems }: ListProps) {
                 <li key={item}>
                 {item}
 
-                <button onClick={() => removeToList(item)}>Remove</button>
+                <button onClick={() => removeToList(item)} data-testid={`Remove-${item}`} >Remove</button>
 
                 </li>
                 
