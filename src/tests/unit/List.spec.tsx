@@ -1,7 +1,7 @@
-import { findByText, getByText, queryByText, render, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import UserEvent from '@testing-library/user-event';
-import Context from '../context';
-import { List } from './List';
+import { List } from '../../components/List';
+import Context from '../../context';
 
 
 describe('List component', () => {

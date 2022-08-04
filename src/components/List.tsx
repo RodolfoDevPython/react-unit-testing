@@ -15,8 +15,10 @@ export function List({ initialItems }: ListProps) {
     }
 
     function removeToList(item: string) {
+        
         setStateContext([ ...stateContext, item ])
         setList( state => state.filter( e => e != item ));
+
     }
 
     return (
@@ -34,7 +36,7 @@ export function List({ initialItems }: ListProps) {
                 <li key={item}>
                 {item}
 
-                <button onClick={() => removeToList(item)}>Remove</button>
+                <button onClick={() => removeToList(item)} data-testid={`Remove-${item}`} >Remove</button>
 
                 </li>
                 
