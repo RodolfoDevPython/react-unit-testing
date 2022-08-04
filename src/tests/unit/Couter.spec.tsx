@@ -4,7 +4,7 @@ import { Counter } from "../../components/Counter"
 
 describe('Couter Component', () => {
 
-    it('should render correctly with item removed', () => {
+    it('should render correctly with item removed!!!', () => {
         const stateContext = ['Rodolfo'];
 
         const { queryByText } = render(
